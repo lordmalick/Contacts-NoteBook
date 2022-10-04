@@ -8,7 +8,11 @@ const connectDB = require('./server/database/connection');
 
 const app = express();
 app.use(express.urlencoded({extended:true}));
-app.use(cors())
+app.use(cors({
+    origin:["http://localhost:3000/"],
+    methods:["GET", "POST", "PATCH", "DELETE"],
+    credentials:true
+}))
 
 dotenv.config( { path : 'config.env'} )
 const PORT = process.env.PORT || 8080
