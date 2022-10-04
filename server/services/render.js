@@ -1,6 +1,4 @@
 const axios = require('axios');
-
-
 exports.homeRoutes = (req, res) => {
     //get request to /api/users
     axios.get('http://[::1]:3000/api/users')
