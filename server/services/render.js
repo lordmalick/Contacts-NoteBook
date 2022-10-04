@@ -5,6 +5,7 @@ exports.homeRoutes = (req, res) => {
     //get request to /api/users
     axios.get('http://[::1]:3000/api/users')
         .then(function(response){
+            res.header('Access-Control-Allow-Origin', '*');
             res.render('index', { users : response.data });
         })
         .catch(err =>{
