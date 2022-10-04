@@ -1,7 +1,8 @@
 const axios = require('axios');
+const BASE_URL = process.env.BASE_URL || "http//localhost:3000/"
 exports.homeRoutes = (req, res) => {
     //get request to /api/users
-    axios.get('http://[::1]:3000/api/users')
+    axios.get(BASE_URL)
         .then(function(response){
             res.header('Access-Control-Allow-Origin', '*');
             res.render('index', { users : response.data });
@@ -18,7 +19,7 @@ exports.add_user = (req, res) =>{
 }
 
 exports.update_user = (req, res) =>{
-    axios.get('http://localhost:3000/api/users', { params : { id : req.query.id }})
+    axios.get(BASE_URL+'/users', { params : { id : req.query.id }})
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})
         })
