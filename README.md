@@ -12,8 +12,8 @@ https://gf-notebook.herokuapp.com/
 npm install
 ```
 
-#### Then set up MONGO_URI variable and specify value in config.env file.
-To execute this project just type
+Then set up MONGO_URI variable and specify value in config.env file.
+####  To execute this project just type
 ```
 npm start
 ```
