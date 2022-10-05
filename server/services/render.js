@@ -2,7 +2,7 @@ const axios = require('axios');
 const BASE_URL = process.env.BASE_URL || "http://localhost:3000/"
 exports.homeRoutes = (req, res) => {
     //get request to /api/users
-    axios.get(BASE_URL)
+    axios.get(BASE_URL+'api/users')
         .then(function(response){
             res.header('Access-Control-Allow-Origin', '*');
             res.render('index', { users : response.data });
