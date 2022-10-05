@@ -1,5 +1,6 @@
 # Node js Notebook App
-In this project, we are going to create node CRUD application with express and mongodb.
+An express js & MongoDB based application deployed to heroku.
+I integrated a chatbot(Chatwoot) for more fun 😎.
 
 #### To run this project clone it and install modules using
 ```
