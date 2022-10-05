@@ -1,5 +1,5 @@
 const axios = require('axios');
-const BASE_URL = process.env.BASE_URL || "http//localhost:3000/"
+const BASE_URL = process.env.BASE_URL || "http://localhost:3000/"
 exports.homeRoutes = (req, res) => {
     //get request to /api/users
     axios.get(BASE_URL)
@@ -19,7 +19,7 @@ exports.add_user = (req, res) =>{
 }
 
 exports.update_user = (req, res) =>{
-    axios.get(BASE_URL+'/users', { params : { id : req.query.id }})
+    axios.get(BASE_URL+'api/users', { params : { id : req.query.id }})
         .then(function(userdata){
             res.render("update_user", { user : userdata.data})
         })
