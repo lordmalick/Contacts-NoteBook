@@ -1,6 +1,6 @@
 # Node js Notebook App
 An express js & MongoDB based application deployed to heroku.
-I integrated a chatbot(Chatwoot) for more fun 😎.
+I have integrated a chatbot(Chatwoot) for more fun 😎.
 
 #### You can have a look. Just check this url.
 ```
